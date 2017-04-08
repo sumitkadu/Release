@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Clairvoyant.exe" version="1.0.0.0" publicKeyToken="87be260627e34cab" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="clairvoyant_eGW_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Clairvoyant" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Clairvoyant.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Clairvoyant.exe" size="382936">
+      <assemblyIdentity name="Clairvoyant" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZJlrNTeir+Jl6j/rMwQ8S3pUJcB1k2zJzfutZryYfME=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="654848">
+      <assemblyIdentity name="Newtonsoft.Json" version="10.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HCRfTIXCraEwvFmULJC3AcJMBu2+PrJYOO2N5PhSU1w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RestClient.dll" size="6656">
+      <assemblyIdentity name="RestClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>X/otZAwVVkvx8he6EyrMjxW/uqNRi8hssKrdAAqgZD0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Clairvoyant.exe.config" size="395">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MPtgtwCqFXvvYdGrRIpEM7QgFQUP2EawOeG2XbLp9bs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="clairvoyant_eGW_icon.ico" size="183198">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sJ4oWrpG/9v9CyanNYty9O01SZ7qTlrf6usr0cEQFkY=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SUMIT-PC\Sumit Kadu" issuerKeyHash="1a06a0a837f9699d873c80c6760c36b8513ddad0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>KMjFqgmAg6O1eepfaLoK0QXrdobO2/jwEemTihUQ6ms=</DigestValue></Reference></SignedInfo><SignatureValue>Ybmbq3f09NTgNRi660cD+5sTJCUaZc5K0WWn7WUO3E79fJ+J74mC+XR37Zc5EUwBeIW36OsMjVguSaSZRyJ55PHYwMMcp9oYGqDnrv2we0E8PGdht4Vwi5IxD/8FJ372d/bRkg+Ob5VCL0BhOk+VOG8LTosRGgB49NmMbmUhELA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>kH/0xylZSJ4BTBG98BUuSYFlXXj6JYOljreLqvr2c1XnVpPVosdryAy7482plO2ktocaHaFg0BMu39FctXKBXEU+pY0EHlZ6KlsBBVYEWWbdPdU+RJkDJAGRm9O1Oabfhs0oxhXUZA8PlBh0zZZ8q/fJ7BbL4EeFEBS1kFilM+s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6bea10158a93e911f0f8dbce8676eb05d10aba685fea79b5a3838009aac5c828" Description="" Url=""><as:assemblyIdentity name="Clairvoyant.exe" version="1.0.0.0" publicKeyToken="87be260627e34cab" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SUMIT-PC\Sumit Kadu</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ye5n1NzJ8pmPgYFUd69md7MPhxrp5gZ4y1nQmK4bWQ0=</DigestValue></Reference></SignedInfo><SignatureValue>Pv1KxqQkI8K5/nfU22y6CI3YH96bcTWiMoAvsqI0NjoHvBEqyuJ7IGUyvDdJhvSPj5oCI0ywz++AYQT2s3ZciGfkc53LjkXPZx5k7qX8t8ETvMvC2KNvl8dJYdaPHxs7nQCfj0Y4+et9Autua/oJcyn+HuIccYsGhNLeRgHOPCc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>kH/0xylZSJ4BTBG98BUuSYFlXXj6JYOljreLqvr2c1XnVpPVosdryAy7482plO2ktocaHaFg0BMu39FctXKBXEU+pY0EHlZ6KlsBBVYEWWbdPdU+RJkDJAGRm9O1Oabfhs0oxhXUZA8PlBh0zZZ8q/fJ7BbL4EeFEBS1kFilM+s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQKFxVGIqqwoBCUCQuqhKrGjANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYAUwBVAE0ASQBUAC0AUABDAFwAUwB1AG0AaQB0ACAASwBhAGQAdTAeFw0xNzA0MDgxMDUxMzNaFw0xODA0MDgxNjUxMzNaMDExLzAtBgNVBAMeJgBTAFUATQBJAFQALQBQAEMAXABTAHUAbQBpAHQAIABLAGEAZAB1MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCQf/THKVlIngFMEb3wFS5JgWVdePolg6WOt4uq+vZzVedWk9Wix2vIDLvjzamU7aS2hxodoWDQEy7f0Vy1coFcRT6ljQQeVnoqWwEFVgRZZt091T5EmQMkAZGb07U5pt+GzSjGFdRkDw+UGHTNlnyr98nsFsvgR4UQFLWQWKUz6wIDAQABMA0GCSqGSIb3DQEBCwUAA4GBABi3enf0Ny716M66gZtjXN7tn9QFXbDw6+IlW3bquy91cuVYD4Iu6WpIMjmPdXqtQXNAiA6001XsFfs/FXK9fMjObti28qOoPH7lBcwxtl20P/r70pvH+ow8wNF+J9K8jZwKqnUZQN+VPe4oDe9oUburshgGWos1XPEuz48HGQW7</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
